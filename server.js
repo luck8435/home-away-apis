@@ -44,7 +44,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: process.env.CORS_ORIGIN,
+    origin: "https://home-away.vercel.app",
   })
 );
 app.use("/uploads", express.static(__dirname + "/uploads"));
